@@ -4,7 +4,7 @@
  * Plugin Name: Rating-Widget: Star Review System
  * Plugin URI:  http://rating-widget.com/wordpress-plugin/
  * Description: Create and manage Rating-Widget ratings in WordPress.
- * Version:     3.2.3
+ * Version:     3.2.4
  * Author:      Rating-Widget
  * Author URI:  http://rating-widget.com/wordpress-plugin/
  * License:     GPLv2
@@ -6336,8 +6336,8 @@ if ( !class_exists( 'RatingWidgetPlugin' ) ) {
                 'menu_slug'        => 'rating-widget',
                 'is_live'          => true,
                 'is_premium'       => false,
-                'has_addons'       => true,
-                'has_paid_plans'   => true,
+                'has_addons'       => false,
+                'has_paid_plans'   => false,
                 'enable_anonymous' => false,
                 'menu'             => array(
                 'slug' => 'rating-widget',
@@ -6345,7 +6345,6 @@ if ( !class_exists( 'RatingWidgetPlugin' ) ) {
                 'permissions'      => array(
                 'newsletter' => true,
             ),
-                'has_affiliation'  => 'selected',
             ) );
         }
         
